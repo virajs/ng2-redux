@@ -4,12 +4,11 @@ import { DevToolsExtension } from './components/dev-tools';
 import { select } from './decorators/select';
 
 @NgModule({
-  providers: [ NgRedux, DevToolsExtension ],
+  providers: [NgRedux, DevToolsExtension]
 })
-class NgReduxModule {}
+export class  NgReduxModule {}
 
 export {
-  NgReduxModule,
   NgRedux,
   DevToolsExtension,
   select,

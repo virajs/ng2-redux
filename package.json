@@ -1,11 +1,11 @@
 {
   "name": "ng2-redux",
-  "version": "4.0.0-beta.3",
+  "version": "4.0.1-beta.1",
   "description": "Angular 2 bindings for Redux",
   "main": "./lib/index.js",
   "scripts": {
     "build:js": "ngc -p tsconfig.json",
-    "build": "rimraf ./lib; npm uninstall @types/chai @types/sinon-chai; tsc; npm install @types/chai@3.4.31 @types/sinon-chai@2.7.26",
+    "build": "rimraf ./lib; npm uninstall @types/chai @types/sinon-chai; ngc -p tsconfig.json; npm install @types/chai@3.4.31 @types/sinon-chai@2.7.26",
     "test": "rimraf coverage && npm run lint && npm run cover",
     "mocha": "mocha --opts mocha.opts",
     "lint": "tslint 'src/**/*.ts' 'examples/counter/**.ts' --exclude 'examples/counter/node_modules'",
